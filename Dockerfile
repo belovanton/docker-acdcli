@@ -40,6 +40,7 @@ WORKDIR /tmp
 
 ADD files/etc/crontab /etc/crontab
 ADD files/bin/start-cron.sh /usr/bin/start-cron.sh
+ADD files/bin/backup_db.sh /usr/bin/backup_db.sh
 ADD files/bin/rsync.sh /usr/bin/rsync.sh
 ADD files/bin/maketar.sh /usr/bin/maketar.sh
 
