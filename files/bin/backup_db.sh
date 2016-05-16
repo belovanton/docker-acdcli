@@ -30,8 +30,7 @@
  umask 177
  mkdir $backup_path/$folder
 # Dump database into SQL file
- time mysqldump --lock-tables=false --user=$user --password=$password --host=$ho
-st $db_name |gzip > $backup_path/$folder/$db_name-$date.sql.gz
+ time mysqldump --lock-tables=false --user=$user --password=$password --host=$host $db_name |gzip > $backup_path/$folder/$db_name-$date.sql.gz
 # Delete files older than 30 days
  find $backup_path/* -mtime +10 -exec rm {} \;
 
