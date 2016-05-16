@@ -14,6 +14,7 @@ RUN \
   DEBIAN_FRONTEND=noninteractive apt-get install -y \
     rsyslog \
     ssh \
+    mysql-client \
     rsync \
     git \
     locales \
